@@ -24,7 +24,7 @@
   ```
 - Common mistakes to avoid:
     - Confusing `javac` and `java`
-    - Including file extensions incorrectly
+    - [Launch Single-File Source-Code Programs](https://openjdk.org/jeps/330) before compiling. E.g. `java Hello.java`
 
 ## Java Shell (jshell)
 - Interactive tool for Java code evaluation

@@ -1,9 +1,9 @@
 # Variable and Type Summary
 
 ## Data Abstraction: Variable
-- Variables are abstractions over memory locations
-- Provide user-friendly names instead of memory addresses
-- Allow memory locations to change without affecting code
+- A variable is a named abstraction for accessing a value stored in memory.
+- Primitive variables store actual values and are independent.
+- Reference variables store memory addresses and can share objects in memory.
 
 ## Types
 - Help manage program complexity
@@ -50,7 +50,9 @@
     - `double` (64 bits)
 
 ## Subtyping
-- Defines relationship between types where one type can substitute another
+- Defines relationship between types where one type can substitute another, T <: S
+    - A piece of code written for variables of type S can also be used on variables of type T
+    - S is a supertype of T
 - Properties:
     - Reflexive: S <: S
     - Transitive: If S <: T and T <: U, then S <: U
@@ -60,5 +62,4 @@
 - Subtype relationships:
     - `byte` <: `short` <: `int` <: `long` <: `float` <: `double`
     - `char` <: `int`
-- Widening type conversion happens automatically
-- Narrowing conversion requires explicit casting
+- Java Widening Type conversion allows putting a value of type T into a variable of type S if T <: S

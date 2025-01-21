@@ -1,6 +1,6 @@
 # Functions Summary
 
-## Functions as Abstraction
+## Computation Abstraction: Functions
 - Functions group instructions and give them a name
 - Allow composition at higher levels of abstraction
 - Basic Java function syntax:
