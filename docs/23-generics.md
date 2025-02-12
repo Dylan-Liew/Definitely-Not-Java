@@ -34,6 +34,28 @@
   }
   ```
 
+## Parameterized Type
+- A concrete type created by specifying actual types for generic parameters
+- Replaces generic type parameters with real types
+- Creates type-safe class instances
+- Example:
+  ```java
+  // This is a generic type (not parameterized yet):
+  class Array<T> {    // T is just a placeholder
+    private T[] elements;
+  }
+  
+  // These are parameterized types:
+  Array<String> words = new Array<>();     // T becomes String
+  class StringArray extends Array<String> { } // Array<T> is instantiated as Array<String>
+
+  // Invalid parameterized type examples:
+  // class Array<String> { }    // ERROR: Cannot use concrete type in class definition
+  // Array<int> numbers;        // ERROR: Cannot use primitive types
+  // Array<T> generic;          // ERROR: T is not defined in this context
+  ```
+
+
 ## Bounded Type Parameters
 - Restrict type parameters to certain types
 - Use extends keyword
